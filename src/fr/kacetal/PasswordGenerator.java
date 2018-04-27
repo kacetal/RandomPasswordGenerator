@@ -87,9 +87,7 @@ public class PasswordGenerator {
 		}
 
         while (true) {
-            result += GeneratorASCIIChar.generateRandomASCIIChar(checkBox09.isSelected(),
-                												 checkBoxAZ.isSelected(),
-                												 checkBoxaz.isSelected());
+            result += GeneratorASCIIChar.generateRandomASCIIChar(checkBox09.isSelected(), checkBoxAZ.isSelected(), checkBoxaz.isSelected());
             counter++;
             if (counter == maxLengthPassword) break;
         }
